@@ -30,4 +30,9 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+![planner-homework-demo](https://user-images.githubusercontent.com/89039793/135564761-e4f74b09-5371-4354-a5db-17e1d4b75d98.gif)
+
+## Deployed Page Link
+
+
+
