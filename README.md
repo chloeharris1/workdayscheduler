@@ -34,5 +34,7 @@ The following animation demonstrates the application functionality:
 
 ## Deployed Page Link
 
+https://chloeharris1.github.io/workdayscheduler/
+
 
 
