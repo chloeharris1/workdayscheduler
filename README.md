@@ -7,6 +7,10 @@ A simple calendar application that allows a user to save events for each hour of
 ## Demo
 ![A user clicks on slots on the color-coded calendar and edits the events.](./demo.gif)
 
+## Link 
+
+[Workday Scheduler](https://chloeharris1.github.io/workdayscheduler/)
+
 ## License
 Licensed under the MIT license.
 
