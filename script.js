@@ -1,23 +1,21 @@
-// Used Moment to display current date to header            
+// Using Moment to display current date on header            
 var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
-
-// GIVEN I am using a daily planner to create a schedule             
-// Create planner time block list  
+ 
                                 
-// Defining variables
+// variable for the save button
 var saveBtn = $(".saveBtn");
 
 // each time block is color-coded to indicate whether it is in the past, present, or future
 function timeBlockColor() {
     var hour = moment().hours();
     console.log(hour);
-
+    // select elements with the class time-block
     $(".time-block").each(function () {
         var currHour = parseInt($(this).attr("id"), 10);
         
         console.log(currHour);
-
+        // add CSS class to color-code based on the current hour
         if (currHour > hour) {
             $(this).addClass("future");
         } else if (currHour === hour) {
@@ -28,14 +26,14 @@ function timeBlockColor() {
     })
 };
 
-// WHEN I refresh the page
-// THEN the saved events persist
+
+// on page refresh, the saved events persist using local storage
 function savePlanner() {
     $(".hour").each(function () {
         // get the name of the div 
         var name = String($(this).attr("name")).trim().toLowerCase()
 
-        // let's trim the name and check it in console
+        // trim the name and check it in console
         console.log("name " + name)
 
         // retrieve the plan from storage 
@@ -49,7 +47,7 @@ function savePlanner() {
     });
 }
 
-// // WHEN I click the save button for that time block
+// on click function to save user input for each time block
  saveBtn.on("click", function () {
    // get the hour (same as the name)
    var name = $(this).siblings(".hour").text().trim().toLowerCase()
@@ -57,11 +55,11 @@ function savePlanner() {
    // get the text entered in the box 
    var text = $(this).siblings(".textarea").val()
 
-   // let's check the console for vars
+   // check the console for vars
    console.log("name: " + name)
    console.log("plan: " + text)
 
-   // THEN the text for that event is saved in local storage
+   // save the text for that event in local storage
    localStorage.setItem(name, text);
  });
 
