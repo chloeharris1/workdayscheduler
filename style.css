@@ -1,71 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background: #E9E8E0;
 }
 
 textarea {
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
-    border-left: 1px solid black;
+    color: #2D2926;
+    border-left: 1px solid #2D2926;
     padding: 10px;
 }
 
-.jumbotron {
+.jumbotron-fluid {
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background-color: #DD4124;
+    color: #2D2926;
     border-radius: 0;
     border-bottom: 10px solid #2d2926;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding: 32px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+#currentDay {
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 .description {
     white-space: pre-wrap;
+    font-weight: 200;
 }
 
 .time-block {
     text-align: center;
-    border-radius: 15px;
 }
 
 .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;
+    border-top: 2.5px solid #2d2926;
+}
+
+.row:first-child {
+    border-top: 3px solid #2d2926;
 }
 
 .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    background-color: #E9E8E0;
+    color: #2D2926;
 }
 
 .past {
-    background-color: #d3d3d3;
-    color: white;
+    background-color: #b8b8b6;
+    color: #E9E8E0;
 }
 
 .present {
-    background-color: #ff6961;
-    color: white;
+    background-color: #fff;
+    color: #DDD5C7;
 }
 
 .future {
-    background-color: #77dd77;
-    color: white;
+    background-color: #FCD12A;
+    color: #2D2926;
+}
+
+button {
+    border: none;
+    outline: none;
 }
 
 .saveBtn {
-    border-left: 1px solid #2d2926;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
+    border-left: 2.5px solid #2d2926;
+    border-right: 3px solid #2d2926;
+    background-color: #145ea0;
+    color: black;
 }
 
 .saveBtn i:hover {
     font-size: 25px;
     transition: all 0.2s ease-in-out;
+}
+
+div:nth-last-child(2) {
+    border-bottom: 3px solid #2d2926;
 }

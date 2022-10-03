@@ -1,8 +1,17 @@
-# Workday Scheduler
+# Workday Scheduler 📅
 
 ![license badge](https://img.shields.io/badge/license-MIT-blue)
 
 A simple calendar application that allows a user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
+
+## Built With
+
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
+
 
 ## Demo
 ![A user clicks on slots on the color-coded calendar and edits the events.](./demo.gif)
@@ -10,6 +19,10 @@ A simple calendar application that allows a user to save events for each hour of
 ## Link 
 
 [Workday Scheduler](https://chloeharris1.github.io/workdayscheduler/)
+
+## UI Inspiration
+
+<img src="./inspo.png" width="300">
 
 ## License
 Licensed under the MIT license.
