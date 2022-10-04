@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&family=Fira+Sans&display=swap');
 body {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
     line-height: 1;
-    background: #E9E8E0;
+    background: #F2F0E6;
 }
 
 textarea {
@@ -17,45 +19,42 @@ textarea {
 
 .jumbotron-fluid {
     text-align: center;
-    background-color: #DD4124;
     color: #2D2926;
     border-radius: 0;
-    border-bottom: 10px solid #2d2926;
+    border-bottom: 5px solid #2d2926;
     font-weight: 400;
     margin-bottom: 25px;
     padding: 32px;
+    background: #E9E8E0;
 }
 
 h1 {
+    font-family: 'Cormorant', serif;
     font-size: 4rem;
 }
 
 #currentDay {
-    font-size: 2rem;
-    font-weight: 200;
-}
-
-.description {
-    white-space: pre-wrap;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 
 .time-block {
     text-align: center;
+    border-radius: 0px 100px 100px 0px;
 }
 
 .row {
+    font-family: 'Fira Sans', sans-serif;
     white-space: pre-wrap;
     height: 80px;
-    border-top: 2.5px solid #2d2926;
-}
-
-.row:first-child {
-    border-top: 3px solid #2d2926;
+    border-top: 1px solid #E9E8E0;
 }
 
 .hour {
-    background-color: #E9E8E0;
+    font-family: 'Fira Sans', sans-serif;
+    border-top: 1px dotted #2D2926;
+    background-color: #F2F0E6;
     color: #2D2926;
 }
 
@@ -65,32 +64,30 @@ h1 {
 }
 
 .present {
-    background-color: #fff;
+    background-color: #FE5442;
     color: #DDD5C7;
 }
 
 .future {
-    background-color: #FCD12A;
+    background-color: #fff;
     color: #2D2926;
 }
 
 button {
     border: none;
     outline: none;
+    box-shadow: 8px 0px 8px -5px grey;
 }
 
 .saveBtn {
     border-left: 2.5px solid #2d2926;
     border-right: 3px solid #2d2926;
-    background-color: #145ea0;
-    color: black;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #2d2926;
+    color: #E9E8E0;
 }
 
 .saveBtn i:hover {
     font-size: 25px;
     transition: all 0.2s ease-in-out;
-}
-
-div:nth-last-child(2) {
-    border-bottom: 3px solid #2d2926;
 }
